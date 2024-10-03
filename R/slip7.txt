@@ -1,0 +1,13 @@
+# Create a sequence of numbers from 20 to 50
+s1 <- seq(20, 50, by = 1)
+
+# Find the mean of numbers from 20 to 60
+m1 <- mean(seq(20, 60, by = 1))
+
+# Sum of numbers from 51 to 91
+s2 <- sum(seq(51, 91, by = 1))
+
+# Print the results
+cat("Sequence from 20 to 50:", s1, "\n")
+cat("Mean of numbers from 20 to 60:", m1, "\n")
+cat("Sum of numbers from 51 to 91:", s2, "\n")

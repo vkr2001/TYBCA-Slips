@@ -1,0 +1,9 @@
+# Create two factors
+f1 <- factor(c("A", "B", "C"))
+f2 <- factor(c("X", "Y", "Z"))
+
+# Concatenate the factors
+result <- c(f1, f2)
+
+# Display the result
+print(result)

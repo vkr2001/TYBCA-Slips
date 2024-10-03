@@ -1,0 +1,16 @@
+# Creating a dataframe for employee details
+employee_data <- data.frame(
+  empno = c(101, 102, 103, 104, 105),
+  empname = c("Rajesh", "Sneha", "Amit", "Priya", "Vikram"),
+  gender = c("Male", "Female", "Male", "Female", "Male"),
+  age = c(28, 24, 32, 29, 35),
+  designation = c("Manager", "Software Engineer", "HR Manager", "Data Analyst", "Senior Developer")
+)
+
+# Displaying the employee details dataframe
+print("Employee Details:")
+print(employee_data)
+
+# Displaying the summary of numeric columns
+print("\nSummary:")
+print(summary(employee_data))

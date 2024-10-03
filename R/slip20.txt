@@ -1,0 +1,10 @@
+Name <- c("Rahul", "Priya", "Amit", "Sneha")
+Age <- c(28, 24, 30, 26)
+City <- c("Mumbai", "Delhi", "Bangalore", "Kolkata")
+Salary <- c(60000, 55000, 70000, 50000)
+
+# Create a data frame
+df <- data.frame(Name, Age, City, Salary)
+
+# Print the data frame
+print(df)

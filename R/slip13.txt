@@ -1,0 +1,6 @@
+# Data
+digits <- c(1, 2, 3, 4, 5, 6)
+frequency <- c(7, 2, 6, 3, 4, 8)
+
+# Create a pie chart
+pie(frequency, labels = digits, main = "Distribution of Digits on Dice")

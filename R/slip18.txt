@@ -1,0 +1,11 @@
+# Create a vector (you can replace this with your own vector)
+vec <- c(5, 10, 3, 8, 15, 2, 7)
+
+# Find the maximum and minimum values
+max_value <- max(vec)
+min_value <- min(vec)
+
+# Print the results
+cat("Original Vector:", vec, "\n")
+cat("Maximum Value:", max_value, "\n")
+cat("Minimum Value:", min_value, "\n")

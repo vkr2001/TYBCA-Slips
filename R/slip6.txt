@@ -1,0 +1,11 @@
+v1 <- c(1, 2, 3, 4, 5, 2, 7)
+v2 <- c('a', 'b', 'c', 'd', 'e', 'b', 'g')
+
+my_data <- data.frame(Column1 = v1, Column2 = v2)
+
+print("Original Data Frame:")
+print(my_data)
+
+duplicate_rows <- my_data[duplicated(my_data) | duplicated(my_data, fromLast = TRUE), ]
+print("Duplicate Elements:")
+print(duplicate_rows)

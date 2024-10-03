@@ -1,0 +1,17 @@
+# Function to generate Fibonacci sequence
+fibonacci <- function(n) {
+  fib_seq <- numeric(n)
+  if (n >= 1) {
+    fib_seq[1] <- 0
+  }
+  if (n >= 2) {
+    fib_seq[2] <- 1
+  }
+  for (i in 3:n) {
+    fib_seq[i] <- fib_seq[i - 1] + fib_seq[i - 2]
+  }
+  return(fib_seq)
+}
+
+result <- fibonacci(10)
+cat("First 10 Fibonacci numbers: ", result, "\n")

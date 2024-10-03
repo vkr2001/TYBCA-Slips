@@ -1,0 +1,29 @@
+reverseAndSumDigits <- function(num) {
+  reverseNumber <- function(n) {
+    rev_num <- 0
+    while (n > 0) {
+      rev_num <- rev_num * 10 + (n %% 10)
+      n <- n %/% 10
+    }
+    return(rev_num)
+  }
+
+  sumOfDigits <- function(n) {
+    digit_sum <- 0
+    while (n > 0) {
+      digit_sum <- digit_sum + (n %% 10)
+      n <- n %/% 10
+    }
+    return(digit_sum)
+  }
+
+  reversed <- reverseNumber(num)
+  sum_digits <- sumOfDigits(reversed)
+  
+  cat("Original Number:", num, "\n")
+  cat("Reversed Number:", reversed, "\n")
+  cat("Sum of Digits of Reversed Number:", sum_digits, "\n")
+}
+
+number <- 76341
+reverseAndSumDigits(number)

@@ -1,0 +1,10 @@
+# Creating a dataframe with student details
+students_data <- data.frame(
+  Rollno = c(101, 102, 103, 104, 105),
+  Studname = c("Rajesh", "Sunita", "Amit", "Priya", "Vikas"),
+  Address = c("Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata"),
+  Marks = c(85, 92, 78, 95, 88)
+)
+
+# Displaying the dataframe
+print(students_data)

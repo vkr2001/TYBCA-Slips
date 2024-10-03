@@ -1,0 +1,8 @@
+# Different lists
+l1 <- list("x", "y", "z")
+l2 <- list("X", "Y", "Z", "x", "y", "z")
+
+result_setdiff <- setdiff(l2, l1)
+
+cat("Using setdiff:")
+print(result_setdiff)

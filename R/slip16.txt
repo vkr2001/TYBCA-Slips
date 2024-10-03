@@ -1,0 +1,20 @@
+# Create a data frame with the given data
+data <- data.frame(
+  Year = c(2001, 2002, 2003),
+  Export = c(26, 32, 35),
+  Import = c(35, 40, 50)
+)
+
+# Create a bar plot
+barplot(
+  height = t(data[, c("Export", "Import")]), 
+  beside = TRUE,  
+  col = c("blue", "red"), 
+  names.arg = data$Year,  
+  ylab = "Value", 
+  xlab = "Year",  
+  main = "Export and Import Data", 
+  legend.text = c("Export", "Import"),
+  args.legend = list(x = "topright"),
+  ylim = c(0, max(data$Export, data$Import) + 5) 
+)

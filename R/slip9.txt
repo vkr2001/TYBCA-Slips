@@ -1,0 +1,15 @@
+employee_data <- data.frame(
+  EmployeeID = c(1, 2, 3, 4, 5),
+  Name = c("Rohan Joshi", "Manoj Jangid", "Avinash More", "Anil Kamthe", "Shubham Kangle"),
+  Age = c(28, 35, 42, 30, 45),
+  Department = c("IT", "HR", "Finance", "Marketing", "Operations"),
+  Salary = c(60000, 50000, 70000, 55000, 75000)
+)
+
+# Display the data frame
+cat("Employee Data:\n")
+print(employee_data)
+
+# Display summary of the data
+cat("\nSummary of Employee Data:\n")
+summary(employee_data)

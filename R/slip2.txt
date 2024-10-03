@@ -1,0 +1,8 @@
+multi_table <- function(n, length) {
+  for (i in 1:length) {
+    result <- n * i
+    cat(sprintf("%d x %d = %d\n", n, i, result))
+  }
+}
+
+multiplication_table(13, 10)
